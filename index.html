@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			name="description"
+			content="Sacolão com diversas ofertas levando saúde e alegria para sua casa. Confira!"
+		/>
+
+		<title>Sacolão do thygas</title>
+
+		<link
+			rel="stylesheet"
+			href="./styles/styles.css"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<span class="logo">Sacolão do Thygas</span>
+			<nav>
+				<ul>
+					<li><a href="#">Início</a></li>
+					<li><a href="#ofertas">Ofertas</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+
+				<div class="hamburguer">
+					<div id="toggle">
+						<span class="l1"></span>
+						<span class="l2"></span>
+						<span class="l3"></span>
+					</div>
+
+					<ul id="menu-hamburguer">
+						<li>
+							<a
+								href="#"
+								onclick="hideMenu()"
+								>Início</a
+							>
+						</li>
+						<li>
+							<a
+								href="#ofertas"
+								onclick="hideMenu()"
+								>Ofertas</a
+							>
+						</li>
+						<li>
+							<a
+								href="#contato"
+								onclick="hideMenu()"
+								>Contato</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero">
+				<section class="hero-content">
+					<h1>Ofertas de verduras todos os dias!</h1>
+					<p>
+						Aqui tem verdura da melhor qualidade e com os melhores preços.
+						Verduras fresquinhas que faram o seu almoço mais saudável e
+						delicioso!
+					</p>
+					<a href="#ofertas">Confira</a>
+				</section>
+				<figure class="hero-image">
+					<img
+						src="assets/hero-img.jpg"
+						alt="Prateleira de verduras"
+					/>
+				</figure>
+			</section>
+
+			<section id="ofertas">
+				<h2>Confira nossas ofertas</h2>
+				<section>
+					<div>
+						<img
+							src="./assets/alface.png"
+							alt="Alface"
+						/>
+						<h4>Alface</h4>
+						<span>R$3,50 Kg</span>
+					</div>
+
+					<div>
+						<img
+							src="./assets/espinafre.png"
+							alt="Espinafre"
+						/>
+						<h4>Espinafre</h4>
+						<span>R$3,50 Kg</span>
+					</div>
+
+					<div>
+						<img
+							src="./assets/couve.png"
+							alt="Couve"
+						/>
+						<h4>Couve</h4>
+						<span>R$3,50 Kg</span>
+					</div>
+
+					<div>
+						<img
+							src="./assets/rucula.png"
+							alt="Rúcula"
+						/>
+						<h4>Rúcula</h4>
+						<span>R$3,50 Kg</span>
+					</div>
+
+					<div>
+						<img
+							src="./assets/acelga.png"
+							alt="Acelga"
+						/>
+						<h4>Acelga</h4>
+						<span>R$3,50 Kg</span>
+					</div>
+
+					<div>
+						<img
+							src="./assets/brocolis.webp"
+							alt="Brócolis"
+						/>
+						<h4>Brócolis</h4>
+						<span>R$3,50 Kg</span>
+					</div>
+
+					<div>
+						<img
+							src="./assets/agriao.png"
+							alt="Agrião"
+						/>
+						<h4>Agrião</h4>
+						<span>R$3,50 Kg</span>
+					</div>
+
+					<div>
+						<img
+							src="./assets/escarola.png"
+							alt="Escarola"
+						/>
+						<h4>Escarola</h4>
+						<span>R$3,50 Kg</span>
+					</div>
+				</section>
+			</section>
+
+			<section id="contato">
+				<figure>
+					<img
+						src="./assets/alfabio.png"
+						alt="Alfabio, o alface"
+					/>
+					<img
+						src="./assets/brocarlos.webp"
+						alt="Brocarlos, o brócolis"
+					/>
+				</figure>
+
+				<section>
+					<h2>Entre em contato conosco</h2>
+					<form>
+						<label for="nome">Nome:</label>
+						<input
+							type="text"
+							id="nome"
+							placeholder="Digite seu nome"
+							required
+						/>
+
+						<label for="sobrenome">Sobrenome:</label>
+						<input
+							type="text"
+							id="sobrenome"
+							placeholder="Digite seu sobrenome"
+							required
+						/>
+
+						<label for="email">Email:</label>
+						<input
+							type="email"
+							id="email"
+							placeholder="Digite seu email"
+							required
+						/>
+
+						<label for="telefone">Telefone</label>
+						<input
+							type="tel"
+							id="telefone"
+							placeholder="(11) 91234-5678"
+							required
+						/>
+
+						<textarea
+							id="feedback"
+							cols="50"
+							rows="4"
+							placeholder="Deixe seu feedback sobre nosso serviço"
+						></textarea>
+
+						<button type="submit">Enviar</button>
+					</form>
+				</section>
+			</section>
+		</main>
+
+		<footer>
+			<section>
+				<div>
+					<p>Sacolão do Thygas</p>
+					<p>Contato: (11) 99999-9999</p>
+					<p>Endereço: Rua Aguinaldo Timóteo</p>
+				</div>
+				<div>
+					<form>
+						<label for="email">Receba nossas ofertas:</label>
+						<input
+							type="email"
+							placeholder="Email"
+						/>
+
+						<button type="submit">Enviar</button>
+					</form>
+				</div>
+			</section>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
