@@ -1,0 +1,39 @@
+@import url(./components/header.css);
+@import url(./components/hero.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+
+:root {
+	--main-color: #1e7f14;
+	--secondary-color: #2fa821;
+	--text-color: #f8ffe3;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: var(--text-color);
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
