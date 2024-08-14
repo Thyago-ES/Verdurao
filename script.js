@@ -1,7 +1,9 @@
+const burguerMenu = document.getElementById("menu-hamburguer");
+
 document.getElementById("toggle").addEventListener("click", () => {
-	document.getElementById("menu-hamburguer").classList.toggle("show");
+	burguerMenu.classList.toggle("show");
 });
 
 function hideMenu() {
-	document.getElementById("menu-hamburguer").classList.remove("show");
+	burguerMenu.classList.remove("show");
 }
