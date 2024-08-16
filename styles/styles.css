@@ -20,6 +20,7 @@
 	--main-color: #1e7f14;
 	--secondary-color: #2fa821;
 	--text-color: #f8ffe3;
+	--text-secondary: #c0c8a6;
 }
 
 html {
@@ -40,7 +41,7 @@ a {
 
 img {
 	width: 100%;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .title {
@@ -64,4 +65,18 @@ img {
 
 .btn-page:hover {
 	background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 768px) {
+	* {
+		scroll-padding-top: 118px;
+	}
+
+	html {
+		font-size: 20px;
+	}
+
+	.btn-page {
+		padding: 1rem 1.3rem;
+	}
 }

@@ -1,5 +1,6 @@
 .contact {
-	width: 100%;
+	display: flex;
+	flex-direction: column;
 	min-height: calc(100vh - 98px);
 	padding: 1rem;
 }
@@ -38,12 +39,12 @@
 	font-size: 1.2rem;
 	text-indent: 4px;
 	border: 1px solid var(--main-color);
+	margin-top: 6px;
 }
 
 .contact .contact-content form div input {
 	height: 40px;
 	margin-bottom: 1rem;
-	margin-top: 6px;
 }
 
 .contact .contact-content form textarea {
@@ -59,4 +60,22 @@
 .contact .contact-content form .btn {
 	display: flex;
 	justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+	.contact {
+		min-height: calc(100vh - 118px);
+		flex-direction: row;
+	}
+
+	.contact figure {
+		flex-direction: column;
+		gap: 2rem;
+		width: 50%;
+	}
+
+	.contact figure img {
+		width: 300px;
+		height: 300px;
+	}
 }
