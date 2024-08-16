@@ -65,13 +65,17 @@
 		<main>
 			<section class="hero">
 				<section class="hero-content">
-					<h1>Ofertas de verduras todos os dias!</h1>
+					<h1 class="title">Ofertas de verduras todos os dias!</h1>
 					<p>
 						Aqui tem verdura da melhor qualidade e com os melhores preços.
-						Verduras fresquinhas que faram o seu almoço mais saudável e
+						Verduras fresquinhas que farão o seu almoço mais saudável e
 						delicioso!
 					</p>
-					<a href="#ofertas">Confira</a>
+					<a
+						href="#ofertas"
+						class="btn-page"
+						>Confira</a
+					>
 				</section>
 				<figure class="hero-image">
 					<img
@@ -81,84 +85,106 @@
 				</figure>
 			</section>
 
-			<section id="ofertas">
-				<h2>Confira nossas ofertas</h2>
-				<section>
+			<section
+				id="ofertas"
+				class="offers"
+			>
+				<h2 class="title">Confira nossas ofertas</h2>
+				<section class="products">
 					<div>
-						<img
-							src="./assets/alface.png"
-							alt="Alface"
-						/>
-						<h4>Alface</h4>
-						<span>R$3,50 Kg</span>
+						<figure>
+							<img
+								src="./assets/alface.png"
+								alt="Alface"
+							/>
+						</figure>
+
+						<h3>Alface - R$3,50 Kg</h3>
 					</div>
 
 					<div>
-						<img
-							src="./assets/espinafre.png"
-							alt="Espinafre"
-						/>
-						<h4>Espinafre</h4>
-						<span>R$3,50 Kg</span>
+						<figure>
+							<img
+								src="./assets/espinafre.png"
+								alt="Espinafre"
+							/>
+						</figure>
+
+						<h3>Espinafre - R$3,50 Kg</h3>
 					</div>
 
 					<div>
-						<img
-							src="./assets/couve.png"
-							alt="Couve"
-						/>
-						<h4>Couve</h4>
-						<span>R$3,50 Kg</span>
+						<figure>
+							<img
+								src="./assets/couve.png"
+								alt="Couve"
+							/>
+						</figure>
+
+						<h3>Couve - R$3,50 Kg</h3>
 					</div>
 
 					<div>
-						<img
-							src="./assets/rucula.png"
-							alt="Rúcula"
-						/>
-						<h4>Rúcula</h4>
-						<span>R$3,50 Kg</span>
+						<figure>
+							<img
+								src="./assets/rucula.png"
+								alt="Rúcula"
+							/>
+						</figure>
+
+						<h3>Rúcula - R$3,50 Kg</h3>
 					</div>
 
 					<div>
-						<img
-							src="./assets/acelga.png"
-							alt="Acelga"
-						/>
-						<h4>Acelga</h4>
-						<span>R$3,50 Kg</span>
+						<figure>
+							<img
+								src="./assets/acelga.png"
+								alt="Acelga"
+							/>
+						</figure>
+
+						<h3>Acelga - R$3,50 Kg</h3>
 					</div>
 
 					<div>
-						<img
-							src="./assets/brocolis.webp"
-							alt="Brócolis"
-						/>
-						<h4>Brócolis</h4>
-						<span>R$3,50 Kg</span>
+						<figure>
+							<img
+								src="./assets/brocolis.webp"
+								alt="Brócolis"
+							/>
+						</figure>
+
+						<h3>Brócolis - R$3,50 Kg</h3>
 					</div>
 
 					<div>
-						<img
-							src="./assets/agriao.png"
-							alt="Agrião"
-						/>
-						<h4>Agrião</h4>
-						<span>R$3,50 Kg</span>
+						<figure>
+							<img
+								src="./assets/agriao.png"
+								alt="Agrião"
+							/>
+						</figure>
+
+						<h3>Agrião - R$3,50 Kg</h3>
 					</div>
 
 					<div>
-						<img
-							src="./assets/escarola.png"
-							alt="Escarola"
-						/>
-						<h4>Escarola</h4>
-						<span>R$3,50 Kg</span>
+						<figure>
+							<img
+								src="./assets/escarola.png"
+								alt="Escarola"
+							/>
+						</figure>
+
+						<h3>Escarola - R$3,50 Kg</h3>
 					</div>
 				</section>
 			</section>
 
-			<section id="contato">
+			<section
+				id="contato"
+				class="contact"
+			>
 				<figure>
 					<img
 						src="./assets/alfabio.png"
@@ -170,72 +196,76 @@
 					/>
 				</figure>
 
-				<section>
-					<h2>Entre em contato conosco</h2>
-					<form>
-						<label for="nome">Nome:</label>
-						<input
-							type="text"
-							id="nome"
-							placeholder="Digite seu nome"
-							required
-						/>
+				<section class="contact-content">
+					<h2 class="title">Entre em contato conosco</h2>
+					<form id="form-contact">
+						<div class="inp">
+							<label for="nome">Nome*:</label>
+							<input
+								type="text"
+								id="nome"
+								placeholder="Digite seu nome"
+								maxlength="20"
+								required
+							/>
 
-						<label for="sobrenome">Sobrenome:</label>
-						<input
-							type="text"
-							id="sobrenome"
-							placeholder="Digite seu sobrenome"
-							required
-						/>
+							<label for="sobrenome">Sobrenome*:</label>
+							<input
+								type="text"
+								id="sobrenome"
+								placeholder="Digite seu sobrenome"
+								maxlength="20"
+								required
+							/>
+						</div>
 
-						<label for="email">Email:</label>
-						<input
-							type="email"
-							id="email"
-							placeholder="Digite seu email"
-							required
-						/>
+						<div class="inp">
+							<label for="email">Email*:</label>
+							<input
+								type="email"
+								id="email"
+								placeholder="Digite seu email"
+								maxlength="40"
+								required
+							/>
 
-						<label for="telefone">Telefone</label>
-						<input
-							type="tel"
-							id="telefone"
-							placeholder="(11) 91234-5678"
-							required
-						/>
+							<label for="telefone">Telefone*:</label>
+							<input
+								type="tel"
+								id="telefone"
+								placeholder="(11) 91234-5678"
+								maxlength="15"
+								required
+							/>
+						</div>
 
+						<label for="feedback">Deixe um feedback:</label>
 						<textarea
 							id="feedback"
 							cols="50"
 							rows="4"
 							placeholder="Deixe seu feedback sobre nosso serviço"
+							maxlength="100"
 						></textarea>
 
-						<button type="submit">Enviar</button>
+						<div class="btn">
+							<button
+								type="submit"
+								class="btn-page"
+							>
+								Enviar
+							</button>
+						</div>
 					</form>
 				</section>
 			</section>
 		</main>
 
 		<footer>
-			<section>
-				<div>
-					<p>Sacolão do Thygas</p>
-					<p>Contato: (11) 99999-9999</p>
-					<p>Endereço: Rua Aguinaldo Timóteo</p>
-				</div>
-				<div>
-					<form>
-						<label for="email">Receba nossas ofertas:</label>
-						<input
-							type="email"
-							placeholder="Email"
-						/>
-
-						<button type="submit">Enviar</button>
-					</form>
-				</div>
+			<section class="footer-content">
+				<h3>Sacolão do Thygas</h3>
+				<p>Contato: (11) 99999-9999</p>
+				<p>Endereço: Rua Aguinaldo Timóteo</p>
 			</section>
 		</footer>
 
