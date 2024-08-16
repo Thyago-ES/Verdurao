@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 .header {
 	width: 100%;
 	display: flex;
@@ -9,6 +7,8 @@
 	top: 0;
 	background-color: var(--main-color);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
+	z-index: 20;
 }
 
 .header .logo {
@@ -20,6 +20,10 @@
 
 .header nav > ul {
 	display: none;
+}
+
+.header nav .hamburguer #toggle {
+	cursor: pointer;
 }
 
 .header nav .hamburguer span {
@@ -43,6 +47,7 @@
 	left: 0;
 	top: 100%;
 	background-color: var(--main-color);
+	outline: 1px solid rgba(255, 255, 255, 0.7);
 
 	transition: all 0.3s ease;
 }

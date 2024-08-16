@@ -1,0 +1,54 @@
+.offers {
+	width: 100%;
+	min-height: calc(100vh - 98px);
+	padding: 1rem;
+	background-color: var(--main-color);
+}
+
+.offers .title {
+	color: var(--text-color);
+}
+
+.offers .products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 2rem;
+	justify-items: center;
+	padding: 2rem;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.offers .products div {
+	padding: 0.5rem;
+}
+
+.offers .products div figure {
+	background-color: var(--text-color);
+	border-radius: 16px;
+	width: 250px;
+	height: 250px;
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.offers .products div figure img {
+	transition: all 0.3s ease;
+}
+
+.offers .products div:hover figure img {
+	transform: scale(1.2);
+}
+
+.offers .products div h3 {
+	font-size: 1.3rem;
+	background: url(../../assets/tabua.png);
+	height: 50px;
+	color: rgba(248, 255, 227, 0.9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 16px;
+}

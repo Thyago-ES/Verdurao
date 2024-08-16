@@ -1,0 +1,21 @@
+footer {
+	width: 100%;
+	padding: 1rem;
+	background-color: var(--main-color);
+	color: var(--text-color);
+}
+
+footer .footer-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer .footer-content h3 {
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+footer .footer-content p {
+	font-size: 1.1rem;
+}
